@@ -57,24 +57,38 @@ Menguji ke-4 endpoint (GET, POST, PUT, DELETE) dengan menggunakan Postman
 Endpoint : /users
 ![Response](img/get1.png)
 
----
-
 **ENPOINT 2, POST:**
 Endpoint : /users
 ![Request](img/post1.png)
 ![Response](img/post2.png)
 ![Check get all](img/post3.png)
 
----
+**ENPOINT 3, PUT:**
+Endpoint : /users/:id
+id = 1
+![Request](img/put1.png)
+![Response](img/put2.png)
+![Check get all](img/put3.png)
 
-**ENPOINT 2, PUT:**
-Endpoint : /users
-![Request](img/post1.png)
-![Response](img/post2.png)
-![Check get all](img/post3.png)
-
+**ENPOINT 4, DELETE:**
+Endpoint : /users/:id
+id = 4
+![Response](img/del1.png)
+![Check get all](img/del2.png)
 ---
+### Langkah 4: Pengujian upload Image ke Docker hub
+
+Upload image  ke Docker Hub
+
+```bash
+docker login
+
+docker tag project-app hitozz/final-project
+
+docker push hitozz/final-project
+```
+
 
 ## Kesimpulan
 
-Tuliskan kesimpulan singkat atau kendala yang Anda hadapi beserta solusinya selama melakukan praktikum ini di sini.
+Saya sudah selesai
